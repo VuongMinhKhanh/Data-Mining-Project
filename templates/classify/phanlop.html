@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Phân Loại Khách Vay</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles3.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ứng Dụng Phân Loại Khách Vay</h1>
+             <a href="{{ url_for('home') }}" class="back-home">Quay về trang chủ</a>
+        </header>
+        <section class="data-upload">
+            <h2>Tải Lên Dữ Liệu Khách Vay</h2>
+            <input type="file" id="file-input" accept=".txt">
+            <button id="load-file">Hiển Thị Dữ Liệu</button>
+            <div id="data-display" class="data-display"></div>
+        </section>
+        <section class="algorithm-selection">
+            <h2>Chọn Thuật Toán</h2>
+            <div class="algorithms">
+                <button class="algorithm-btn" data-algo="knn">K-Nearest Neighbors (KNN)</button>
+                <button class="algorithm-btn" data-algo="naive-bayes">Naïve Bayes</button>
+                <button class="algorithm-btn" data-algo="decision-tree">Cây Quyết Định (TDITD)</button>
+            </div>
+        </section>
+        <section class="input-data">
+            <h2>Nhập Thông Tin Khách Vay</h2>
+            <form id="input-form">
+                <label for="gender">Giới Tính:</label>
+                <select id="gender">
+                    <option value="1">Nam</option>
+                    <option value="0">Nữ</option>
+                </select><br>
+
+                <label for="age">Độ Tuổi:</label>
+                <select id="age">
+                    <option value="1">18-25</option>
+                    <option value="2">26-35</option>
+                    <option value="3">36-50</option>
+                    <option value="4">Trên 51</option>
+                </select><br>
+
+                <label for="income">Thu Nhập (triệu đồng/tháng):</label>
+                <input type="number" id="income" min="0"><br>
+
+                <label for="loan">Số Tiền Vay (triệu đồng):</label>
+                <input type="number" id="loan" min="0"><br>
+
+                <button type="submit">Dự Đoán Kết Quả</button>
+            </form>
+            <div id="result">
+                <h3>Kết Quả Phân Loại:</h3>
+                <p id="classification-result">Chưa có kết quả</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Ứng Dụng Phân Loại Khách Vay</p>
+         </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts3.js') }}"></script>
+</body>
+</html>

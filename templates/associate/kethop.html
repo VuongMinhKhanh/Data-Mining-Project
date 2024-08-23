@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Luật Kết Hợp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ứng Dụng Luật Kết Hợp</h1>
+            <a href="{{ url_for('home') }}" class="back-home">Quay về trang chủ</a>
+        </header>
+        <form id="upload-form" enctype="multipart/form-data">
+            <section class="data-upload">
+                <h2>Tải Lên Dữ Liệu Hóa Đơn</h2>
+                <input type="file" id="file-input" name="file" accept=".txt">
+                <button type="button" id="load-file">Hiển Thị Dữ Liệu</button>
+                <div id="data-display" class="data-display"></div>
+            </section>
+            <section class="parameter-settings">
+                <h2>Thiết Lập Tham Số</h2>
+                <label for="min-sup">MinSup (%):</label>
+                <input type="number" name="min-sup" id="min-sup" min="0" max="100" value="10"><br>
+                <label for="min-conf">MinConf (%):</label>
+                <input type="number" name="min-conf" id="min-conf" min="0" max="100" value="10"><br>
+                <button type="submit" id="run-algorithm">Chạy Thuật Toán</button>
+            </section>
+        </form>
+        <section id="result">
+            <h2>Kết Quả Luật Kết Hợp</h2>
+            <div id="results-display" class="data-display"></div>
+        </section>
+         <footer>
+            <p>&copy; 2024 Ứng Dụng Luật Kết Hợp</p>
+         </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts2.js') }}"></script>
+</body>
+</html>

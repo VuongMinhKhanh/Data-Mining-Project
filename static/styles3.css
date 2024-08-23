@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8BBD0;
+    margin: 0;
+    padding: 0;
+    color: #4A148C;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #FFF0F5;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4A148C;
+    font-size: 24px;
+}
+
+header .back-home {
+    text-decoration: none;
+    color: #4A148C;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+header .back-home::before {
+    content: '←';
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #4A148C;
+    margin-bottom: 15px;
+}
+
+.data-upload {
+    text-align: center;
+}
+
+.data-upload input[type="file"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid #4A148C;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#load-file {
+    padding: 10px 20px;
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#load-file:hover {
+    background-color: #311B92;
+}
+
+#data-display {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f1f1f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap; /*Giữ nguyên mặc định file*/
+}
+
+.algorithm-selection .algorithms {
+    text-align: center;
+}
+
+.algorithm-btn {
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.algorithm-btn.selected {
+    background-color: #6A1B9A;
+    color: white;
+}
+
+.algorithm-btn:hover {
+    background-color: #ccc;
+}
+
+.input-data label {
+    display: inline-block;
+    margin-top: 10px;
+    width: 160px;
+    font-weight: bold;
+    color: #4A148C;
+}
+
+input[type="number"], select {
+    width: calc(100% - 170px);
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #311B92;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#classification-result {
+    font-weight: bold;
+    color: #F8BBD0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #F8BBD0;
+    border-top: 2px solid #eee;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+}
