@@ -16,9 +16,9 @@ The Data Mining Learning Application serves as a practical platform where users 
 3. Real-Time Feedback: Immediate feedback is provided on algorithm performance and results, helping users quickly grasp the effectiveness and application of each technique.
 
 ## Learning Modules
-**Clustering:** Understand how to group a set of objects in such a way that objects in the same group are more similar to each other than to those in other groups. Experiment with algorithms like K-Means, Mean-Shift, and DBScan.
-**Association Rules:** Learn about basic association rule mining, which is widely used for market basket analysis, web usage mining, and bioinformatics. This module simplifies the association rules without delving into complex algorithms like Apriori.
-**Classification:** Dive into algorithms that predict the category of a dataset. Techniques such as Knn, Naïve Bayes, and Decision Trees are implemented to classify data into predefined classes.
+- **Clustering:** Understand how to group a set of objects in such a way that objects in the same group are more similar to each other than to those in other groups. Experiment with algorithms like K-Means, Mean-Shift, and DBScan.
+- **Association Rules:** Learn about basic association rule mining, which is widely used for market basket analysis, web usage mining, and bioinformatics. This module simplifies the association rules without delving into complex algorithms like Apriori.
+- **Classification:** Dive into algorithms that predict the category of a dataset. Techniques such as Knn, Naïve Bayes, and Decision Trees are implemented to classify data into predefined classes.
 
 ## Installation
 1. **Clone the repository:**
