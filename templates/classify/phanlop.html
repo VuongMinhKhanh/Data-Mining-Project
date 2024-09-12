@@ -12,6 +12,29 @@
             <h1>Ứng Dụng Phân Loại Khách Vay</h1>
              <a href="{{ url_for('home') }}" class="back-home">Quay về trang chủ</a>
         </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Phân Loại Khách Vay</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles3.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ứng Dụng Phân Loại Khách Vay</h1>
+             <a href="{{ url_for('home') }}" class="back-home">Quay về trang chủ</a>
+        </header>
+        <section class="data-upload">
+            <h2>Tải Lên Dữ Liệu Khách Vay</h2>
+            <input type="file" id="file-input" accept=".txt">
+            <button id="load-file">Hiển Thị Dữ Liệu</button>
+            <div id="data-display" class="data-display"></div>
+        </section>
+        <section class="algorithm-selection">
+            <h2>Chọn Thuật Toán</h2>
+            <div class="algorithms">
+                <button class="algorithm-btn"
         <section class="data-upload">
             <h2>Tải Lên Dữ Liệu Khách Vay</h2>
             <input type="file" id="file-input" accept=".txt">
@@ -30,13 +53,13 @@
             <h2>Nhập Thông Tin Khách Vay</h2>
             <form id="input-form">
                 <label for="gender">Giới Tính:</label>
-                <select id="gender">
+                <select id="gender" name="gender"> <!-- Thêm thuộc tính name -->
                     <option value="1">Nam</option>
                     <option value="0">Nữ</option>
                 </select><br>
 
                 <label for="age">Độ Tuổi:</label>
-                <select id="age">
+                <select id="age" name="age"> <!-- Thêm thuộc tính name -->
                     <option value="1">18-25</option>
                     <option value="2">26-35</option>
                     <option value="3">36-50</option>
@@ -44,10 +67,10 @@
                 </select><br>
 
                 <label for="income">Thu Nhập (triệu đồng/tháng):</label>
-                <input type="number" id="income" min="0"><br>
+                <input type="number" id="income" name="income" min="0"><br> <!-- Thêm thuộc tính name -->
 
                 <label for="loan">Số Tiền Vay (triệu đồng):</label>
-                <input type="number" id="loan" min="0"><br>
+                <input type="number" id="loan" name="loan" min="0"><br> <!-- Thêm thuộc tính name -->
 
                 <button type="submit">Dự Đoán Kết Quả</button>
             </form>
@@ -62,5 +85,6 @@
     </div>
 
     <script src="{{ url_for('static', filename='scripts3.js') }}"></script>
+
 </body>
 </html>
