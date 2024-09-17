@@ -42,4 +42,7 @@ The project's localhost will be shown and you can test out 3 methods with differ
 Whether you are a student starting in the world of data analytics, an educator seeking comprehensive teaching tools, or a professional looking to refresh your knowledge, this application is designed to help you achieve your learning goals in an engaging and effective manner. Let’s embark on this journey of discovery and mastery in data mining!
 
 
-## Clustering Code in Colab: https://colab.research.google.com/drive/1qK_GEmeyklrPFOClX066gd_ND8eDfgXE?usp=sharing
+## Sample Code in Google Colab: 
+- Clustering: [https://colab.research.google.com/drive/1qK_GEmeyklrPFOClX066gd_ND8eDfgXE?usp=sharing](url)
+- Association Rule: [https://colab.research.google.com/drive/1sRlrVGQhJeJu3mvETOoa8Fj5CBggZZyO?usp=sharing](url)
+- Classification: [https://colab.research.google.com/drive/1oXCNPA3eIdP7kqV_xz0b1G2gaezRcPGl?usp=sharing](url)
