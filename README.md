@@ -1,9 +1,9 @@
 # Data-Mining-Project
 
 ## Sample Code in Google Colab: 
-- Clustering: [https://colab.research.google.com/drive/1qK_GEmeyklrPFOClX066gd_ND8eDfgXE?usp=sharing](url)
-- Association Rule: [https://colab.research.google.com/drive/1sRlrVGQhJeJu3mvETOoa8Fj5CBggZZyO?usp=sharing](url)
-- Classification: [https://colab.research.google.com/drive/1oXCNPA3eIdP7kqV_xz0b1G2gaezRcPGl?usp=sharing](url)
+- Clustering: https://colab.research.google.com/drive/1qK_GEmeyklrPFOClX066gd_ND8eDfgXE?usp=sharing
+- Association Rule: https://colab.research.google.com/drive/1sRlrVGQhJeJu3mvETOoa8Fj5CBggZZyO?usp=sharing
+- Classification: https://colab.research.google.com/drive/1oXCNPA3eIdP7kqV_xz0b1G2gaezRcPGl?usp=sharing
 
 ## Introduction
 This application is a team project for Data Mining Course assessment, tailored for students, educators, and anyone interested in understanding and applying data mining techniques in the domains of Clustering, Association Rules, and Classification.
